@@ -108,7 +108,7 @@ a {
   block-size: 27px;
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
-  padding: 3px 14px 3px 0;
+  /*margin: 3px 14px 3px 0;*/
   font-size: 18px;
   appearance: none;
 }
@@ -152,11 +152,13 @@ a {
   position: relative;
   padding: 2px;
   min-height: 298px;
+  min-width: 401px;
+  gap: 30px
 }
 
 .content__list-item {
   min-height: 103px;
-  margin: 2px 0 30px 2px;
+  margin: 2px;
 }
 
 .content__video-card {
@@ -185,10 +187,12 @@ a {
   text-overflow: clip;
   white-space: nowrap;
   overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
   line-height: 0.9;
+  max-width: 200px;
 }
 
 /* Result section */
@@ -227,7 +231,7 @@ a {
 }
 
 /* Hover and focus states */
-.search-form__label:hover,
+/*.search-form__label:hover,*/
 .content__video-card:hover,
 .button:hover {
   text-decoration: underline;
@@ -248,6 +252,7 @@ a {
 .search-form__label:has(.search-form__checkbox:focus-visible),
 .content__card-link:focus-visible,
 .button:focus-visible {
+  outline-offset: 2px;
   outline: 1px solid #fff;
 }
 
